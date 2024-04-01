@@ -1,0 +1,93 @@
+/* Inside a separate CSS file (e.g., styles.css) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue color for buttons */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.header {
+    background-color: #083246; /* Light gray background */
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    font-size: 3em; /* Larger heading */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Elegant sans-serif font */
+  }
+  
+  .header-nav {
+    text-align: center;
+  }
+  
+  .header-nav ul {
+    list-style-type: none;
+  }
+  
+  .header-nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .header-nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 11px;
+    font-family: 'Roboto', sans-serif; /* Simple and modern sans-serif font */
+  }
+  
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+
+
+.footer {
+    background-color: #01053d;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Centering navigation links horizontally */
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 1px;
+    margin: 0 10px; /* Add margin between navigation links */
+}

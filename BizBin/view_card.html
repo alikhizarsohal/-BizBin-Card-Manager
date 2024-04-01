@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cards</title>
+    <link rel="stylesheet" href="view_card.css">  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectedTheme = localStorage.getItem('selectedTheme');
+            if (selectedTheme) {
+                const themeStylesheet = document.createElement('link');
+                themeStylesheet.rel = 'stylesheet';
+                if (selectedTheme !== "theme")
+                    if(selectedTheme === "cool")
+                        themeStylesheet.href = selectedTheme + 'view_card' + '.css';
+                    else
+                        themeStylesheet.href = selectedTheme + 'view_card' + '.css';
+                else
+                    themeStylesheet.href = selectedTheme + '.css';
+                document.head.appendChild(themeStylesheet);
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="hh">BizBin</h1>
+          <nav class="header-nav">
+            <ul>
+              <li class="ll"><a href="view_card.html">View Card</a></li>
+              <li class="ll"><a href="search_card.html">Search Card</a></li>
+              <li class="ll"><a href="theme.html">Theme</a></li>
+              <li class="ll"><a href="add_card.html">Add Card</a></li>
+              <li class="ll"><a href="home.html">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="container">
+        <h1 class="head2">View Cards</h1>
+
+        <!-- Display cards -->
+        <div id="cardContainer" class="card-container">
+            <!-- Cards will be dynamically added here -->
+            <div class="card">
+                <input type="text" data-field="title" value="Card Title">
+                <input type="text" data-field="date" value="Card Date">
+                <input type="text" data-field="time" value="Card Time">
+                <input type="text" data-field="event" value="Card Event">
+                <input type="text" data-field="description" value="Card Description">
+                <input type="text" data-field="imageData" value="Card Image URL">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br><br><br><br><br>
+    </div>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <span>Developed by Ali Khizar</span>
+        </nav>
+    </footer>
+    <script src="view_card.js"></script>
+</body>
+</html>

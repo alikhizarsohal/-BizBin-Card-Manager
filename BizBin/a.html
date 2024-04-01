@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="a.css">
+    <script>
+        window.addEventListener('scroll', function() {
+    var footer = document.querySelector('.footer');
+    var scrollHeight = document.documentElement.scrollHeight;
+    var clientHeight = document.documentElement.clientHeight;
+    var scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (scrollTop + clientHeight >= scrollHeight) {
+        footer.style.bottom = '0'; // Show the footer when scrolled to the bottom
+    } else {
+        footer.style.bottom = '-50px'; // Hide the footer otherwise
+    }
+});
+
+    </script>
+</head>
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>Jelena Jovanovic <span>Web Developer</span></li>
+        <li><a href="https://vanila.io" target="_blank">Company</a></li>
+        <li><a href="https://instagram.com/plavookac" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/plavookac" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
+      </ul>
+    </div>
+    <div id='center' class="main center">
+      <div class="mainInner">
+        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+      </div>
+      <div class="mainInner">
+        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+      </div>
+      <div class="mainInner">
+        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Developed by Ali Khizar</p>
+        </div>
+    </footer>
+</body>
+</html>

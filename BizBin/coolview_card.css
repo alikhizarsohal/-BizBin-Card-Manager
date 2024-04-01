@@ -1,0 +1,181 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.hh {
+    font-size: 250px;
+}
+
+.ll {
+    height: 110px;
+    background-color: #6b054c; /* Custom background color */
+    padding-top: 7px; /* Padding for content */
+    padding-bottom: 7px; /* Padding for content */
+    border: 1px solid #fff; /* Increase border size and set color */
+    border-radius: 100px; /* Rounded corners */
+    margin-bottom: 1px; /* Margin between list items */
+}
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Clean and modern sans-serif font */
+    background-color: #222222; /* Dark background color */
+    color: #ffffff; /* White text color */
+    line-height: 1.8; /* Improved readability */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head2 {
+    background-color: #3b5998; /* Facebook blue */
+    border-radius: 20px; /* Rounded corners */
+
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: -15%;
+    padding-bottom: -15%;
+
+    color: #ffffff; /* White text color */
+    font-size: 2.5em; /* Larger heading */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Clean and widely supported sans-serif font */
+}
+
+/* Header styles */
+.header {
+    background-color: #222222; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em; /* Larger heading */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Elegant sans-serif font */
+}
+
+.header-nav {
+    text-align: center;
+}
+
+.header-nav ul {
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header-nav a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 11px;
+    font-family: 'Roboto', sans-serif; /* Simple and modern sans-serif font */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    margin: 10px;
+    background-color: #333333; /* Darker background color */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styles */
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Additional styles for card content */
+.card h2 {
+    margin-top: 0;
+    color: #ffffff; /* White text color */
+}
+
+.card p {
+    margin: 5px 0;
+    color: #cccccc; /* Lighter text color */
+}
+
+.card button {
+    background-color: #ff4500; /* Orange-red color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #cc3700; /* Darker orange-red color */
+}
+
+/* Ensure cards wrap properly */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+    align-content: flex-start; /* Align cards to the top */
+}
+
+/* Ensure container scrolls vertically if needed */
+.container {
+    overflow-y: auto;
+}
+
+/* footer.css */
+
+.footer {
+    background-color: #222222; /* Dark background color */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Centering navigation links horizontally */
+}
+
+.footer-nav a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px; /* Add margin between navigation links */
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
+    <title>Theme Selection</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectedTheme = localStorage.getItem('selectedTheme');
+            if (selectedTheme) {
+                const themeStylesheet = document.createElement('link');
+                themeStylesheet.rel = 'stylesheet';
+                if (selectedTheme !== "theme")
+                    themeStylesheet.href = 'theme' + selectedTheme + '.css';
+                else
+                    themeStylesheet.href = selectedTheme + '.css';
+                document.head.appendChild(themeStylesheet);
+            }
+        });
+    </script>
+    <style>
+        /* CSS for header and footer */
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header-nav, .footer-nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-nav a, .footer-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="hh">BizBin</h1>
+          <nav class="header-nav">
+            <ul>
+              <li class="ll"><a href="view_card.html">View Card</a></li>
+              <li class="ll"><a href="search_card.html">Search Card</a></li>
+              <li class="ll"><a href="theme.html">Theme</a></li>
+              <li class="ll"><a href="add_card.html">Add Card</a></li>
+              <li class="ll"><a href="home.html">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <h1>Theme Selection</h1>
+    <button onclick="setTheme('cool')">Cool Theme</button>
+    <button onclick="setTheme('sad')">Sad Theme</button>
+    <button onclick="setTheme('theme')">Default Theme</button>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <span>Developed by Ali Khizar</span>
+        </nav>
+    </footer>
+
+    <script>
+        function setTheme(theme) {
+            localStorage.setItem('selectedTheme', theme); // Store selected theme
+            window.location.href = 'theme.html'; // Redirect to the homepage
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+.hh{
+    font-size: 250px;
+  }
+  .ll {
+    height:110px;
+    background-color: #05296b; /* Custom background color */
+    padding-top: 7px; /* Padding for content */
+    padding-bottom: 7px; /* Padding for content */
+    border: 1px solid #fff; /* Increase border size and set color */
+    border-radius: 100px; /* Rounded corners */
+    margin-bottom: 1px; /* Margin between list items */
+  }
+/* Global styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Creative font */
+    background-color: #f8f8f8;
+    color: #574444; /* Softer text color */
+    line-height: 1.8; /* Improved readability */
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }  
+  .container22 {
+    width: 100%;
+    margin: 0 auto;  
+    text-align: center;
+   
+  }
+.header {
+    background-color: #083246; /* Light gray background */
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    font-size: 3em; /* Larger heading */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Elegant sans-serif font */
+  }
+  
+  .header-nav {
+    text-align: center;
+  }
+  
+  .header-nav ul {
+    list-style-type: none;
+  }
+  
+  .header-nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .header-nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 11px;
+    font-family: 'Roboto', sans-serif; /* Simple and modern sans-serif font */
+  }
+  
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+
+
+  #addCardForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #9bd4d8;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(15, 4, 80, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  #addCardForm input[type="text"],
+  #addCardForm input[type="date"],
+  #addCardForm input[type="time"],
+  #addCardForm textarea,
+  #addCardForm input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #203ddf;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  #addCardForm input[type="text"]:focus,
+  #addCardForm input[type="date"]:focus,
+  #addCardForm input[type="time"]:focus,
+  #addCardForm textarea:focus,
+  #addCardForm input[type="file"]:focus {
+    border-color: #007bff;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: -2px;
+    color: #040950;
+    font-size: 18px;
+  }
+  
+  #addCardForm button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  #addCardForm button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+
+.alert-above-form {
+    position: absolute;
+    top: -50px; /* Adjust this value as needed to position the alert above the form */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+
+.footer {
+    background-color: #01053d;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Centering navigation links horizontally */
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 1px;
+    margin: 0 10px; /* Add margin between navigation links */
+}

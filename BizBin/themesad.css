@@ -1,0 +1,32 @@
+/* Inside a separate CSS file (e.g., styles.css) */
+body {
+    font-family: 'Garamond', serif; /* Garamond font for a more melancholic feel */
+    background-color: #e6e6e6; /* Light grayish-blue background for a subdued feel */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text color for better readability */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px; /* Larger font size for emphasis */
+    color: #333; /* Dark gray text color */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px; /* Slightly larger font size for buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #555; /* Dark gray for a somber button color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333; /* Slightly darker gray on hover */
+}

@@ -1,0 +1,182 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.hh {
+    font-size: 250px;
+}
+
+.ll {
+    height:110px;
+    background-color: #3A86FF; /* Custom background color */
+    padding-top: 7px; /* Padding for content */
+    padding-bottom: 7px; /* Padding for content */
+    border: 1px solid #fff; /* Increase border size and set color */
+    border-radius: 100px; /* Rounded corners */
+    margin-bottom: 1px; /* Margin between list items */
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+    background-color: #F0F0F0; /* Light gray background color */
+    color: #444; /* Dark gray text color */
+    line-height: 1.8; /* Improved readability */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container22 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #3A86FF; /* Custom button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button background color */
+}
+
+#searchType {
+    font-size: 16px;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+/* Image styles */
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Additional styles for card content */
+.card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.card button {
+    background-color: #3A86FF; /* Custom button background color */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3; /* Darker button background color */
+}
+
+/* Ensure cards wrap properly */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.header {
+    background-color: #1C1C1C; /* Dark background */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em; /* Larger heading */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Clean and widely supported sans-serif font */
+}
+
+.header-nav {
+    text-align: center;
+}
+
+.header-nav ul {
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 11px;
+    font-family: 'Arial', sans-serif; /* Clean and widely supported sans-serif font */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #1C1C1C; /* Dark background */
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Centering navigation links horizontally */
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 1px;
+    margin: 0 10px; /* Add margin between navigation links */
+}

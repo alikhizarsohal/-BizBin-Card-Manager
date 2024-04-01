@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Cards</title>
+    <link rel="stylesheet" href="search_card.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectedTheme = localStorage.getItem('selectedTheme');
+            if (selectedTheme) {
+                const themeStylesheet = document.createElement('link');
+                themeStylesheet.rel = 'stylesheet';
+                themeStylesheet.href = selectedTheme === "cool" ? selectedTheme + 'search_card' + '.css' : selectedTheme + '.css';
+                document.head.appendChild(themeStylesheet);
+            }
+        });
+    </script>
+</head>
+<body> 
+    <header class="header">
+        <div class="container">
+          <h1 class="hh">BizBin</h1>
+          <nav class="header-nav">
+            <ul>
+              <li class="ll"><a href="view_card.html">View Card</a></li>
+              <li class="ll"><a href="search_card.html">Search Card</a></li>
+              <li class="ll"><a href="theme.html">Theme</a></li>
+              <li class="ll"><a href="add_card.html">Add Card</a></li>
+              <li class="ll"><a href="home.html">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="container22">
+        <h1>Search Cards</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="searchType">Search by:</label>
+                <select id="searchType" name="searchType">
+                    <option value="title">Title</option>
+                    <option value="date">Date</option>
+                    <option value="event">Event</option>
+                    <option value="description">Description</option>
+                    <option value="time">Time</option>
+                </select>
+            </div>
+            <div id="searchInput" class="form-group">
+                <label for="searchQuery">Search:</label>
+                <input type="text" id="searchQuery" name="searchQuery" required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="searchResults" class="card-container">
+            <!-- Search results will be dynamically added here -->
+        </div>
+        <div>
+            <br><br><br><br><br>
+        </div>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <span>Developed by Ali Khizar</span>
+        </nav>
+    </footer>
+
+    </div>
+    <script src="search_card.js"></script>
+</body>
+</html>

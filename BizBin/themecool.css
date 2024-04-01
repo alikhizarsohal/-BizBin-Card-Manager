@@ -1,0 +1,32 @@
+/* Inside a separate CSS file (e.g., styles.css) */
+body {
+    font-family: 'Verdana', sans-serif; /* Verdana font for a clean and modern look */
+    background-color: #064244; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text color for better readability */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px; /* Larger font size for emphasis */
+    color: #007bff; /* Cool blue color for headings */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px; /* Slightly larger padding for buttons */
+    font-size: 25px; /* Larger font size for buttons */
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners for buttons */
+    background-color: #007bff; /* Cool blue color for buttons */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}

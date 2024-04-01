@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Welcome to BizBin</h1>
+      <nav class="header-nav">
+        <ul>
+          <a href="view_card.html">View Card</a>
+          <a href="search_card.html">Search Card</a>
+          <a href="theme.html">Theme</a>
+          <a href="add_card.html">Add Card</a>
+          <a href="home.html">Home</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to BizBin</h2>
+      <p>BizBin allows you to manage your cards efficiently. You can add, search, update, and delete card information easily.</p>
+      <p>Explore the different sections using the navigation links above.</p>
+    </div>
+  </section>
+  <section class="mobile-app-images">
+    <div class="container">
+      <h2>Discover BizBin Mobile App</h2>
+      <div class="mobile-app-images-wrapper">
+        <img src="ab.jpg" alt="Mobile App Image 1">
+        <img src="cd.jpg" alt="Mobile App Image 2">
+        <img src="ef.jpg" alt="Mobile App Image 3">
+        <img src="gh.jpg" alt="Mobile App Image 4">
+      </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Developed by Ali Khizar</p>
+    </div>
+  </footer>
+  <section class="about-us" id="about-us">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>**BizBin** is a mobile application designed to help you organize and manage your business cards. 
+        We understand the importance of keeping track of your professional contacts, 
+        and BizBin makes it easy to do so. With BizBin, you can:
+      </p>
+      <ul>
+        <li>Scan and store business card information directly from your phone.</li>
+        <li>Organize your contacts with customizable tags and categories.</li>
+        <li>Search for specific contacts quickly and easily.</li>
+        <li>Share your own digital business card with others.</li>
+      </ul>
+      <div class="about-images">  
+        <img src="image1.jpg" alt="Image 1">  
+        <img src="image2.jpg" alt="Image 2">  
+        <img src="image3.jpg" alt="Image 3">  
+      </div>
+    </div>
+  </section>
+  <script>
+    // Select the target element (About Us section)
+    const aboutSection = document.querySelector('.about-us');
+  
+    // Create a new Intersection Observer instance
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        // If the About Us section is in the viewport
+        if (entry.isIntersecting) {
+          // Add the 'show' class to the About Us section
+          entry.target.classList.add('show');
+          // Stop observing once the section is displayed
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+  
+    // Observe the About Us section
+    observer.observe(aboutSection);
+  </script>
+  <div>
+    <br><br><br><br><br>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.hh {
+    font-size: 250px;
+}
+
+.ll {
+    height:110px;
+    background-color: #05296b; /* Custom background color */
+    padding-top: 7px; /* Padding for content */
+    padding-bottom: 7px; /* Padding for content */
+    border: 1px solid #fff; /* Increase border size and set color */
+    border-radius: 100px; /* Rounded corners */
+    margin-bottom: 1px; /* Margin between list items */
+}
+
+.ll:hover {
+    background-color: #024ca0; /* Change background color on hover */
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Clean and modern sans-serif font */
+    background-color: #f0f0f0; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+    line-height: 1.8; /* Improved readability */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    height: 110px;
+}
+
+.container2 {
+    width: 90%;
+    max-width: 1200px; /* Limit container width for better readability */
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    padding: 7px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+    background-color: #fff; /* White background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    text-align: center;
+}
+
+.container2 h2 {
+    background-color: #007bff; /* Vibrant blue background */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 3em; /* Larger font size for emphasis */
+    font-family: 'Montserrat', sans-serif; /* Elegant sans-serif font */
+    color: #fff; /* White text color */
+}
+
+.container2 p {
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif; /* Modern sans-serif font */
+    color: #555; /* Dark gray text color */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(110px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header styles */
+.header {
+    background-color: #007bff; /* Vibrant blue background */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em; /* Larger heading */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Elegant sans-serif font */
+}
+
+.header-nav {
+    text-align: center;
+}
+
+.header-nav ul {
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 11px;
+    font-family: 'Roboto', sans-serif; /* Simple and modern sans-serif font */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('b.jpg');
+    background-color: #fff;
+    padding: 80px 0; /* Increased padding */
+    text-align: center;
+    margin-bottom: 150px; /* Larger margin */
+    margin-top: 100px; /* Smaller margin */
+}
+
+.hero h2 {
+    font-size: 3em; /* Larger font size */
+    font-family: 'Indie Flower', cursive; /* Handwriting font */
+}
+
+.hero p {
+    font-size: 1.3em; /* Larger font size */
+    font-family: 'Courier New', monospace; /* Typewriter font */
+    color: #777; /* Subdued text color */
+}
+
+/* Add custom styles for the mobile app images section */
+.mobile-app-images {
+    background-color: #007bff; /* Vibrant blue background */
+    padding: 80px 0;
+}
+
+.mobile-app-images .container {
+    text-align: center;
+}
+
+.mobile-app-images h2 {
+    margin-bottom: 72px;
+    font-size: 3em;
+    font-family: 'Lato', sans-serif; /* Simple and elegant sans-serif font */
+}
+
+/* Adjust the layout of mobile app images */
+.mobile-app-images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile-app-images img {
+    width: 30%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* Set different order for the images */
+.mobile-app-images img:first-child {
+    order: 1; /* Move the first image to the left */
+    margin-right: auto; /* Push the second image to the rightmost corner */
+}
+
+.mobile-app-images img:nth-child(2) {
+    order: 2; /* Move the second image below the first */
+    margin-left: auto; /* Push the second image to the rightmost
+    corner */
+} 
+
+.mobile-app-images img:nth-child(3) {
+    order: 4; /* Move the second image below the first */
+    margin-left: auto; /* Push the second image to the rightmost corner */
+} 
+
+.mobile-app-images img:nth-child(4) {
+    order: 3; /* Move the first image to the left */
+    margin-right: auto; /* Push the second image to the rightmost corner */
+}
+
+/* About Us section styles */
+.about-us {
+    text-align: center;
+    background-color: #007bff; /* Vibrant blue background */
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    margin-bottom: 40px;
+    font-size: 3em;
+    color: #fff; /* White text color */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+}
+
+.about-us p {
+    font-size: 1.4em;
+    line-height: 2;
+    color: #fff; /* White text color */
+    font-family: 'Nunito', sans-serif; /* Modern sans-serif font */
+}
+
+.about-us ul {
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 30px;
+    font-size: 1.4em;
+    color: #fff; /* White text color */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #007bff; /* Vibrant blue background */
+    color: #fff;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
+}

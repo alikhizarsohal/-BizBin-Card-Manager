@@ -1,0 +1,180 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.hh {
+    font-size: 250px;
+}
+
+.ll {
+    height: 110px;
+    background-color: #438496; /* Teal background color */
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin-bottom: 1px;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean and modern sans-serif font */
+    background-color: #f2f2f2; /* Light gray background color */
+    color: #333333; /* Dark gray text color */
+    line-height: 1.8;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container22 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    background-color: #292b2c; /* Dark gray background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Clean and widely supported sans-serif font */
+}
+
+.header-nav {
+    text-align: center;
+}
+
+.header-nav ul {
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header-nav a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 11px;
+    font-family: 'Arial', sans-serif; /* Clean and widely supported sans-serif font */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+#addCardForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background color */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.form-group {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#addCardForm input[type="text"],
+#addCardForm input[type="date"],
+#addCardForm input[type="time"],
+#addCardForm textarea,
+#addCardForm input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #cccccc; /* Light gray border color */
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Light gray background color */
+    transition: border-color 0.3s;
+}
+
+#addCardForm input[type="text"]:focus,
+#addCardForm input[type="date"]:focus,
+#addCardForm input[type="time"]:focus,
+#addCardForm textarea:focus,
+#addCardForm input[type="file"]:focus {
+    border-color: #007bff; /* Blue focus border color */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: -2px;
+    color: #333333; /* Dark gray text color */
+    font-size: 18px;
+}
+
+#addCardForm button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; /* Blue button background color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#addCardForm button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue button background color */
+}
+
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.alert-above-form {
+    position: absolute;
+    top: -50px; /* Adjust this value as needed to position the alert above the form */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.footer {
+    background-color: #292b2c; /* Dark gray background color */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Centering navigation links horizontally */
+}
+
+.footer-nav a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    padding: 5px 1px;
+    margin: 0 10px; /* Add margin between navigation links */
+}
